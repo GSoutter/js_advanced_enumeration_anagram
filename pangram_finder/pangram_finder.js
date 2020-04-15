@@ -6,9 +6,7 @@ const PangramFinder = function (phrase) {
 PangramFinder.prototype.isPangram = function () {
 if (this.phrase.length > 0) {
   for (let letter of this.alphabet) {
-    if (this.phrase.includes(letter) === false)  {
-      return false;
-    }
+    if (this.phrase.includes(letter) === false){return false;}
   }
   return true
 }
